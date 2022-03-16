@@ -30,6 +30,6 @@ CXX: Cpp的编译器名称，默认值为g++</br>
 示例： \$(wildcard *.c ./sub/*.c)
         返回值格式： a.c b.c c.c d.c
 
-2、$(patsubst <pattern>,<replacement>,<text>)</br>
+2、$(patsubst \<pattern>,\<replacement>,\<text>)</br>
 示例： \$(patsubst %.c,%.o,x.c bar.c)</br>
     返回值格式:x.o bar.o
