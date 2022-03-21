@@ -66,6 +66,7 @@ int main(){
             sleep(1);
             int len = read(pipefd[0],Buf,sizeof(Buf));
             printf("child recv: %s, pid : %d\n",Buf,getpid());
+            bzero(Buf,1024);
             
         }
         
