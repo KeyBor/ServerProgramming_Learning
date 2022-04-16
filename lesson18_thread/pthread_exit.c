@@ -4,7 +4,7 @@
     void pthread_exit(void *retval);
         功能：终止一个线程，在哪个线程中调用，就表示终止哪个线程
         参数：
-            retval:需要传递一个指针，作为一个返回值，可以在pthread_join()中获取到。
+            retval:需要传递一个指针，作为一个传出参数，可以在pthread_join()中获取到。
 
     pthread_t pthread_self(void);
         功能：获取当前的线程的线程ID
